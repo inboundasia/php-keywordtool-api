@@ -2,6 +2,10 @@
 
 This is a non-official [Keywordtool.io API](https://docs.keywordtool.io/v2/reference) PHP wrapper
 
+```
+composer require inboundasia/keywordtool
+```
+
 # TODO
 
 - [x] Support google search volume
