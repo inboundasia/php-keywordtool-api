@@ -1,0 +1,19 @@
+{
+  "name": "inboundasia/keywordtool",
+  "type": "library",
+  "description":"non-official Keywordtool.io API wrapper",
+  "authors": [
+    {
+      "name": "Roli",
+      "email": "roli.chung@inboundmarketing.com.tw"
+    }
+  ],
+  "require": {
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+        "InboundAsia\\KeywordTool\\": "src/"
+    }
+  }
+}
