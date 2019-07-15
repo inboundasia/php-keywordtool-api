@@ -26,6 +26,7 @@ class KeywordVolumeResult
         $this->string = $data->string;
         $this->cpc = $data->cpc;
         $this->cmp = $data->cmp;
+        $this->volume = $data->volume;
 
         for ($i = 1; $i <= 12; $i++)
         {

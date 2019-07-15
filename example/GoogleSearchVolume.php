@@ -6,6 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $key = 'your-api-key';
 
+/** @var GoogleSearchVolumeResult */
 $result = (new KeywordTool($key))->google_search_volume([
     '行銷', '泳裝'
 ], [

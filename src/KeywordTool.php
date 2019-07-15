@@ -82,7 +82,7 @@ class KeywordTool
      * }
      *
      * @param array $keywords 1 to 800 keywords are accepted
-     * @return void
+     * @return GoogleSearchVolumeResult
      */
     public function google_search_volume(array $keywords, array $options = [])
     {
