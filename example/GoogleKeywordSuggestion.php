@@ -1,11 +1,13 @@
 <?php
 
 use InboundAsia\KeywordTool\KeywordTool;
+use InboundAsia\KeywordTool\GoogleKeywordSuggestionResult;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 $key = 'your-api-key';
 
+/** @var GoogleKeywordSuggestionResult */
 $results = (new KeywordTool($key))->google_keyword_suggestions(
     '行銷', [
     'metrics_location' => '2158',

@@ -1,6 +1,7 @@
 <?php
 
 use InboundAsia\KeywordTool\KeywordTool;
+use InboundAsia\KeywordTool\GoogleSearchVolumeResult;
 
 require __DIR__ . '/../vendor/autoload.php';
 
