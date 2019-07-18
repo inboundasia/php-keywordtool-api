@@ -4,6 +4,7 @@ namespace InboundAsia\KeywordTool;
 
 use InboundAsia\KeywordTool\GoogleSearchVolumeResult;
 use InboundAsia\KeywordTool\GoogleKeywordSuggestionResult;
+use InboundAsia\KeywordTool\QuotaResult;
 
 class KeywordTool
 {
@@ -42,7 +43,7 @@ class KeywordTool
      *     }
      *   }
      * }
-     * @return void
+     * @return QuotaResult
      */
     public function quota()
     {
@@ -58,7 +59,7 @@ class KeywordTool
           $output = curl_exec($ch);
           $response = json_decode($output);
 
-          return $response;
+          return new QuotaResult($response);
     }
 
     /**
