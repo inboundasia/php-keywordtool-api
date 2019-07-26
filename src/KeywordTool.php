@@ -49,17 +49,17 @@ class KeywordTool
     {
         $params = [
             'apikey' => $this->apikey,
-          ];
+        ];
 
-          $ch = curl_init();
-          curl_setopt($ch, CURLOPT_URL, self::QuotaEndpoint);
-          curl_setopt($ch, CURLOPT_POST, TRUE);
-          curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
-          curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-          $output = curl_exec($ch);
-          $response = json_decode($output);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, self::QuotaEndpoint);
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        $output = curl_exec($ch);
+        $response = json_decode($output);
 
-          return new QuotaResult($response);
+        return new QuotaResult($response);
     }
 
     /**
