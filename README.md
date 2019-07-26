@@ -10,7 +10,7 @@ composer require inboundasia/keywordtool
 
 - [x] Support google search volume
 - [x] Support google keyword suggestion
-- [ ] Quota Wrapper
+- [x] Quota Wrapper
 - [ ] Support more search volume
 - [ ] Support more keyword suggestion
 - [ ] Support analyze competitors
