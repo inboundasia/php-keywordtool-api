@@ -92,9 +92,9 @@ class KeywordTool
             'keyword' => $keywords,
             'metrics_location' => $options['metrics_location'] ?? '',
             'metrics_language' => $options['metrics_language'] ?? '',
-            'metrics_network' => 'googlesearchnetwork',
-            'metrics_currency' => 'USD',
-            'output' => 'json'
+            'metrics_network' => $options['metrics_network'] ?? 'googlesearchnetwork',
+            'metrics_currency' => $options['metrics_currency'] ?? 'USD',
+            'output' => $options['output'] ?? 'json',
         ];
 
         $ch = curl_init();
